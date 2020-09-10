@@ -1,0 +1,8 @@
+main: Main
+name: TestKotlinPlugin
+version: '1.0'
+description: This plugin does so much stuff it can't be contained!
+api-version: '1.16'
+author: Multicody10
+website: stellarmc.net
+prefix: StellarMC
