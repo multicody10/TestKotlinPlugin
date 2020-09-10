@@ -1,4 +1,4 @@
-import commands.CraftCMD
+import commands.Craft
 import listeners.MainListener
 import org.bukkit.ChatColor
 import org.bukkit.command.Command
@@ -15,9 +15,9 @@ class Main : JavaPlugin(), CommandExecutor {
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
         if (sender is Player) {
             val player: Player = sender
-            return when (command?.name) {
+            return when (command.name) {
                 "craft" -> {
-                    CraftCMD(player)
+                    Craft(player)
                     true
                 }
                 else -> {
@@ -26,7 +26,7 @@ class Main : JavaPlugin(), CommandExecutor {
                 }
             }
         } else {
-            sender?.sendMessage("You must be a player!")
+            sender.sendMessage("You must be a player!")
             return true
         }
     }

@@ -6,3 +6,9 @@ api-version: '1.16'
 author: Multicody10
 website: stellarmc.net
 prefix: StellarMC
+commands:
+  craft:
+    description: Opens a crafting menu if you have a crafting table in your inventory.
+    usage: "Usage: /<command>"
+    permission: stellar.craft
+    permission-message: You do not have permission to use this command.
