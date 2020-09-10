@@ -7,6 +7,7 @@ import org.bukkit.entity.Player
 
 class Craft(player: Player) {
     private val prefix = ChatColor.DARK_AQUA.toString() + ChatColor.BOLD + "CRAFT " + ChatColor.DARK_GRAY + ChatColor.BOLD + ">> " + ChatColor.RESET
+
     init {
         if (player.hasPermission("stellar.craft") || player.gameMode == GameMode.CREATIVE || player.isOp) {
             player.openWorkbench(null, true)
