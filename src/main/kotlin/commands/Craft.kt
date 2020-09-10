@@ -5,7 +5,7 @@ import org.bukkit.GameMode
 import org.bukkit.Material
 import org.bukkit.entity.Player
 
-class CraftCMD(player: Player) {
+class Craft(player: Player) {
     private val prefix = ChatColor.DARK_AQUA.toString() + ChatColor.BOLD + "CRAFT " + ChatColor.DARK_GRAY + ChatColor.BOLD + ">> " + ChatColor.RESET
     init {
         if (player.hasPermission("stellar.craft") || player.gameMode == GameMode.CREATIVE || player.isOp) {
